@@ -1,5 +1,5 @@
 
-
+/*The Main HTML file that sets the background and dimensions */
 html{
     
     background: #232526; /* fallback for old browsers */
@@ -10,15 +10,18 @@ html{
   
 }
 
+/*Class for the logo which adjusts the <img> of the logo*/
 .logo{
     
     width: 20%;
 }
 
+/*centers the <div> of the logo */
 .logocenter{
     text-align: center;
 }
 
+/*the class to resize the terminal window image */
 .mainIMG{
     
     width: 50%;
@@ -110,6 +113,8 @@ button:hover {
         width: 5.5em; }
     .button{float: left;}
 }
+
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
     
