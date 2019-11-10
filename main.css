@@ -1,8 +1,8 @@
-/*The Main HTML file that sets the background and dimensions */
-html {
 
-    background: #232526;
-    /* fallback for old browsers */
+
+html{
+
+    background: #232526; /* fallback for old browsers */
     font-family: 'IBM Plex Sans', sans-serif;
     color: whitesmoke;
     width: 100%;
@@ -10,47 +10,51 @@ html {
 
 }
 
-/*Class for the logo which adjusts the <img> of the logo*/
-.logo {
+.logo{
 
-    width: 20%;
+    width: 10%;
 }
 
-/*centers the <div> of the logo */
-.logocenter {
+.logocenter{
     text-align: center;
 }
 
-/*the class to resize the terminal window image */
-.mainIMG {
+.mainIMG{
 
     width: 50%;
     height: 50%;
     padding-top: 5em
 }
 
-/*background to black*/
-#bg {
-    background: black;
+.bgimage{
+    background-image: url(assets/background_code.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
 }
+
+#bg{
+    background-image:
+url(assets/background_code.png);}
 
 .button {
 
     text-align: right;
 }
 
-h1 {
+h1{
     font-size: 3em;
 }
-
-.about {
+.about{
     margin-left: 2em;
     padding-left: 1em;
 
 
 }
-
-.abouttext {
+.abouttext{
     margin-left: 20em;
     padding-left: 1em;
     padding-right: 1em;
@@ -59,97 +63,83 @@ h1 {
 }
 
 
-button {
-    background-color: black;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+button{
+    background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 button:hover {
-    background-color: #4CAF50;
-    /* Green */
-    color: white;
+  background-color: #4CAF50; /* Green */
+  color: white;
 }
 
-.topnav .icon {
+.topnav .icon{
     display: none;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: black;
-    overflow: hidden;
+  background-color: black;
+  overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
     display: block;
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 19px;
-    text-decoration: none;
-    font-size: 20px;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 19px;
+  text-decoration: none;
+  font-size: 20px;
     width: 20.1%;
 
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #333;
-    color: white;
+  background-color: #333;
+  color: white;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #333;
-    color: white;
+  background-color: #333;
+  color: white;
 }
 
 @media (min-width:400px) and (max-width: 768px) {
 
-    .topnav a {
-        width: 5.5em;
-    }
-
-    .button {
-        float: left;
-    }
+    .topnav a{
+        width: 5.5em; }
+    .button{float: left;}
 }
-
-
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
 
-    .topnav a:not(:first-child) {
-        display: none;
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+    button{
+            font-size: 10px;
     }
-
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-
-    button {
-        font-size: 10px;
-    }
-
-    .mainIMG {
+  .mainIMG{
         display: none;
     }
 
     .logo {
 
-        width: 40%;
-    }
+        width: 40%;}
 
-    .about {
+    .about{
 
         float: left;
         padding: 1%;
@@ -157,8 +147,7 @@ button:hover {
         display: block;
 
     }
-
-    .abouttext {
+    .abouttext{
 
         float: left;
         padding: 2%;
@@ -172,21 +161,18 @@ button:hover {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
-    .topnav.responsive {
-        position: relative;
-    }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
 
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-
-    }
+  }
 
 
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
